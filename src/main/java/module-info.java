@@ -3,6 +3,7 @@ module nrv.chatfx {
     requires javafx.fxml;
 
 
-    opens nrv.chatfx to javafx.fxml;
-    exports nrv.chatfx;
+
+    exports nrv.chatfx.client;
+    opens nrv.chatfx.client to javafx.fxml;
 }
